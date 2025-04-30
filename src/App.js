@@ -6,10 +6,11 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="app">
-      <MovieList movies={movies} />
-    </div>
+    <>
+      <MovieList movies={movies} /> // Передаю у компонент MovieList массив movies 
+    </>
   );
 };
 
 export default App;
+
