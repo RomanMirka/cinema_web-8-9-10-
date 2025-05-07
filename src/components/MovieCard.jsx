@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const formatShowtime = (Newdate) => {
   const options = { 
@@ -13,10 +14,17 @@ const formatShowtime = (Newdate) => {
 };
 
 const MovieCard = ({ movie }) => {
+  const navigate = useNavigate(); 
+
+  const handleBookingClick = () => {
+    navigate(`/booking/${movie.id}`); 
+  };
+
   return (
     <div 
       className="movie-card" 
       style={{ backgroundImage: `url(${movie.poster})` }}
+      onClick={handleBookingClick} 
     >
       <div className="movie-details">
         <h3 className="movie-title">{movie.title}</h3>

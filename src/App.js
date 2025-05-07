@@ -1,16 +1,17 @@
 import React from 'react';
-import MovieList from './components/MovieList.jsx';
-import movies from './data/movies';
-
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Booking from './pages/Booking';
 
 const App = () => {
   return (
-    <>
-      <MovieList movies={movies} /> // Передаю у компонент MovieList массив movies 
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/booking/:id" element={<Booking />} />
+      </Routes>
+    </Router>
   );
 };
 
 export default App;
-
