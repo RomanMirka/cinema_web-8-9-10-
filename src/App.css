@@ -159,8 +159,8 @@ body {
   width: 70%;
   margin-bottom: 35px;
   padding: 40px 0;
-  background-color: #444444; /* Темно-сірий */
-  color: #F2EDDC;            /* Білий */
+  background-color: #444444; 
+  color: #F2EDDC;            
   text-align: center;
   font-size: 20px;
   letter-spacing: 10px;
@@ -173,9 +173,9 @@ body {
 }
 
 .seat {
-  width: 52px;
-  height: 52px;
-  margin: 6px;
+  width: 50px;
+  height: 50px;
+  margin: 4px;
   background-color: #777777;
   border: none; 
   border-radius: 8px;
@@ -201,7 +201,58 @@ body {
   box-shadow: 0 7px 12px rgba(0, 0, 0, 0.8);
 }
 
+.confirm-button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #AAAAAA; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+.confirm-button:hover {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #DDDDDD; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form_labels {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.form_labels_h {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.form_inputs {
+  font-size: 16px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px; 
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.form_inputs:focus {
+  margin-top: 12px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px; 
+  margin-bottom: 12px;
+  outline: none;
+  border: 2px solid #F2EDDC; 
+  background-color: #F2EDDC;
+}
 
 
 
@@ -314,7 +365,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
   margin-bottom: -30px;
-  box-sizing: border-box; /* Враховуємо padding в загальній ширині */
+  box-sizing: border-box; 
 }
 
 .seat-row {
@@ -351,6 +402,7 @@ body {
   background-color: #DDDDDD;          
   box-shadow: 0 7px 12px rgba(0, 0, 0, 0.8);
 }
+
 
 
 }
